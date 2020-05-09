@@ -1,0 +1,27 @@
+.NavigationToggler {
+    height: 100%;
+    width: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+}
+
+.NavigationToggler div {
+    height: 4px;
+    width: 100%;
+    margin: 5px;
+    background: #fff;
+}
+
+@media (min-width: 610px) {
+    .NavigationToggler {
+        display: none;
+    }
+}
+
+

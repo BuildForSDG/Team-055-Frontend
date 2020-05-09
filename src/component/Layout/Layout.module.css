@@ -1,0 +1,140 @@
+.Content {
+    margin-top: 76px;
+    font-size: 1.5em;
+}
+
+.Layout {
+    width: 100%;
+    background: url('../../assets/images/bg.jpeg') no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0 2px 1px #ccc;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
+.Background h1 {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    text-shadow: 0 1px 1px #000;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.Button {
+    background: #0052b1;;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #0052b1;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #000;
+    animation: enable 0.3s linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.Button:hover, .Button:active {
+    background-color: #0251ac;
+    border: 1px solid #045cc0;
+    color: #cfcfcf;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Arrow {
+    padding: 5% 0;
+    transition: all 0.3s ease-in;
+    animation: arrow 0.3s ease-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 610px) {
+    .Background h1 {
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: none;
+        color: #000;
+        text-transform: uppercase;
+        padding-top: 1.5%;
+        line-height: 4rem;
+    }   
+    .Arrow {
+        padding: 1% 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 500px ) {
+    .Background h1 {
+        font-size: 3rem;
+        line-height: 2.9rem;
+        padding-top: 4%;
+        text-shadow: 0 1px 1px #000;
+    }
+}
+
+
+@media (min-width: 600px ) {
+    .Background h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        padding-top: 4%;
+        text-shadow: 0 1px 1px #000;
+    }
+}
+
+@media (min-width: 560px) {
+    .Background h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        padding-top: 1%;
+        text-shadow: 0 1px 1px #000;
+    }
+}
+
+@media (min-width: 1000px ) {
+    .Background h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        padding-top: 1%;
+        text-shadow: 0 0 #000;
+    }
+    .Button {
+        font-size: 2.5rem;
+    }
+}

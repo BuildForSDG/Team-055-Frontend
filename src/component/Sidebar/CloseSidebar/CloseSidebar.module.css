@@ -1,0 +1,30 @@
+.CloseSidebar {
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.CloseSidebar div {
+    position: absolute;
+    color: #fff;
+    border-radius: 2px;
+    background: #0061a1;
+    padding: 5%;
+    font-weight: 700;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+
+/* .Toggle {
+    color: #ff0000;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;    
+    font-size: 1.2rem;
+    cursor: pointer;
+} */
