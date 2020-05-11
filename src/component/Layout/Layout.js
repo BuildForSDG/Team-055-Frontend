@@ -6,10 +6,14 @@ import Aux from '../../hoc/Auxiliary';
 import Toolbar from '../Toolbar/Toolbar';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
+import Modal from '../../container/Authentication/UserLogin/UserLoginModal/UserLoginModal';
+import UserLogin from '../../container/Authentication/UserLogin/UserLogin';
+import Backdrop from '../UI/Backdrop/Backdrop';
 
 class layout extends Component {
     state = {
-        showSidebar: false
+        showSidebar: false,
+        showModal: false
     }
 
     closeSidebar = () => {
@@ -22,6 +26,13 @@ class layout extends Component {
         })
     }
 
+    openModal = () => {
+        this.setState({showModal: true});
+    }
+
+    closeModal = () => {
+        this.setState({showModal: false});
+    }
 
     render() {
         return (
@@ -38,7 +49,11 @@ class layout extends Component {
                     <div className={classes.Arrow}>
                         <img src={arrow} alt="direction" />
                     </div>
-                    <button className={classes.Button}>GET STARTED</button>
+                    <Modal show={this.state.showModal}>
+                        <Backdrop />
+                        <UserLogin close={this.closeModal} />
+                    </Modal>
+                    <button className={classes.Button} onClick={this.openModal}>GET STARTED</button>
                     <Footer />
                 </div>
             </Aux>

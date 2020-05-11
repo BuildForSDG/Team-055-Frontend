@@ -1,0 +1,39 @@
+.UserLoginModal {
+    position: fixed;
+    background: url('../../../../assets/images/bg4.jpg') no-repeat;
+    background-size: cover;
+    height: 77%;
+    z-index: 500;
+    width: 45%;
+    top: 3.6rem;
+    padding: 20px;
+    transition: all 0.4s ease-out;
+}
+
+.Open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Close {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+@media (max-width: 658px) and (min-height: 658px) {
+    .UserLoginModal {
+        width: 70%;
+    }
+}
+
+@media (max-width: 760px) {
+    .UserLoginModal {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .UserLoginModal {
+        width: 60%;
+    }
+}
