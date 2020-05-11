@@ -1,5 +1,5 @@
 .Content {
-    margin-top: 76px;
+    margin-top: 70px;
     font-size: 1.5em;
 }
 
@@ -16,7 +16,6 @@
     margin: auto;
     padding: 10px 0;
 }
-
 
 .Background h1 {
     font-size: 2rem;
@@ -131,7 +130,7 @@
     .Background h1 {
         font-size: 4rem;
         line-height: 4rem;
-        padding-top: 1%;
+        padding-top: 2%;
         text-shadow: 0 0 #000;
     }
     .Button {
