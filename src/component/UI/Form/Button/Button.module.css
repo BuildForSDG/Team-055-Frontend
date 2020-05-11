@@ -1,0 +1,31 @@
+
+.Button {
+    width: 200px;    
+    background: #0052b1;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.Button:disabled {
+    color: #2c2c2c;
+    cursor: not-allowed;
+    background: #eee;
+    width: 100%;
+}
+
+
+.Success {
+    color: rgb(0, 138, 30);
+}
+
+.Danger {
+    color: #ee0000;
+}
+
+.Normal {
+    color: #fff;
+    
+}
