@@ -1,0 +1,16 @@
+#home {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/images/bg.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+
+  section {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80%;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
