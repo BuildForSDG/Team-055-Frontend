@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3f59ade844f6447587bc89840a7970f5)](https://www.codacy.com/gh/BuildForSDG/MindCare-Frontend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDG/MindCare-Frontend&amp;utm_campaign=Badge_Grade)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
